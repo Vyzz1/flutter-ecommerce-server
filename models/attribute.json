@@ -1,0 +1,44 @@
+{
+  "name": "Laptop XYZ Pro",
+  "description": "Laptop thế hệ mới với hiệu suất mạnh mẽ và thiết kế sang trọng",
+  "variants": [
+    {
+      "variantId": 1, // ID biến thể cần cập nhật
+      "attributes": [
+        {
+          "attributeId": 1, // Màu sắc
+          "value": "Xanh"
+        },
+        {
+          "attributeId": 2, // RAM
+          "value": "16GB"
+        },
+        {
+          "attributeId": 3, // Ổ cứng
+          "value": "SSD 512GB"
+        }
+      ],
+      "price": 16000000,
+      "stock": 12
+    },
+    {
+      "variantId": 2, // ID biến thể cần cập nhật
+      "attributes": [
+        {
+          "attributeId": 1, // Màu sắc
+          "value": "Trắng"
+        },
+        {
+          "attributeId": 2, // RAM
+          "value": "16GB"
+        },
+        {
+          "attributeId": 3, // Ổ cứng
+          "value": "SSD 1TB"
+        }
+      ],
+      "price": 17500000,
+      "stock": 8
+    }
+  ]
+}

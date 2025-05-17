@@ -1,0 +1,30 @@
+[
+  {
+    "attributes": [
+      {
+        "attributeId": "67bec9787de2d4b1afdb2741",
+        "value": "Red"
+      },
+      {
+        "attributeId": "67bec9947de2d4b1afdb2747",
+        "value": "256GB"
+      }
+    ],
+    "price": 21000,
+    "stock": 8
+  },
+  {
+    "attributes": [
+      {
+        "attributeId": "67bec9787de2d4b1afdb2741",
+        "value": "Red"
+      },
+      {
+        "attributeId": "67bec9947de2d4b1afdb2747",
+        "value": "128GB"
+      }
+    ],
+    "price": 12121221,
+    "stock": 2
+  }
+]
