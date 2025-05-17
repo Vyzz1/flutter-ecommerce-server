@@ -24,7 +24,7 @@ handlebars.registerHelper("formatDate", function (date) {
 
 handlebars.registerHelper("formatPrice", function (price) {
   if (price === undefined || price === null) return "0";
-  
+
   let numericPrice;
   if (typeof price === "string") {
     numericPrice = parseFloat(price.replace(/[^0-9.-]+/g, ""));
@@ -33,11 +33,11 @@ handlebars.registerHelper("formatPrice", function (price) {
   } else {
     numericPrice = 0;
   }
-  
-  return new Intl.NumberFormat('vi-VN', {
-    style: 'currency',
-    currency: 'VND',
-    maximumFractionDigits: 0 
+
+  return new Intl.NumberFormat("vi-VN", {
+    style: "currency",
+    currency: "VND",
+    maximumFractionDigits: 0,
   }).format(numericPrice);
 });
 
@@ -49,7 +49,7 @@ const compileTemplate = async (
   templateName: string,
   data: Record<string, any>
 ) => {
-  const filePath = path.join(
+  const filePath = path.resolve(
     __dirname,
     "../templates",
     `${templateName}.handlebars`
@@ -84,7 +84,7 @@ const sendMail = async (
   }
 };
 
-const sendOrderConfirmationEmail = async(orderId: string, to: string) => {
+const sendOrderConfirmationEmail = async (orderId: string, to: string) => {
   const subject = "Order Confirmation";
   const template = "order-confirmation";
 
