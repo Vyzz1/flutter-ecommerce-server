@@ -11,7 +11,7 @@ COPY . .
 
 RUN npx tsc
 
-# Copy templates sau khi tsc, vì tsc không chuyển file .handlebars
+
 RUN mkdir -p dist/templates
 COPY templates dist/templates
 
